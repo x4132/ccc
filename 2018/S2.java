@@ -41,7 +41,7 @@ public class S2 {
         int[][] output = new int[grid.length][grid.length];
         for (int x = 0; x < grid.length; x++) {
             for (int y = 0; y < grid.length; y++) {
-                output[x][y] = grid[y][x];
+                output[x][grid.length - y - 1] = grid[y][x];
             }
         }
 
