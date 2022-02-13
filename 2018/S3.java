@@ -1,4 +1,4 @@
-import java.io.BufferedReader;
+/*import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -40,7 +40,7 @@ public class S3 {
 
                 grid[cur.y][x].underWatch = true;
             }
-            for (int x = cur.x; x > 0; x--) {
+            for (int x = cur.x; x >= 0; x--) {
                 if (grid[cur.y][x].type == 'W') {
                     break;
                 }
@@ -63,7 +63,7 @@ public class S3 {
 
                 grid[y][cur.x].underWatch = true;
             }
-            for (int y = cur.y; y > 0; y++) {
+            for (int y = cur.y; y >= 0; y--) {
                 if (grid[y][cur.x].type == 'W') {
                     break;
                 }
@@ -83,7 +83,7 @@ public class S3 {
             int targetX = cells.get(i).x;
             int targetY = cells.get(i).y;
             boolean flag = true;
-            System.out.println("TARGET " + targetX + " " + targetY);
+            // System.out.println("TARGET " + targetX + " " + targetY);
             while (!queue.isEmpty()) {
                 Node cur = queue.poll();
                 if (cur.underWatch) {
@@ -181,4 +181,4 @@ class Node {
         this.x = x;
         this.y = y;
     }
-}
+}*/
